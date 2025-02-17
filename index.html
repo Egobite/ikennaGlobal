@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Z Ikenna Global Resources</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: rgb(247, 188, 198);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        #logo {
+            width: 180px;
+            height: 180px;
+            background: #fff;
+            border-radius: 50%;
+        }
+
+        #horizontalnav {
+            margin-top: 30px;
+            background-color: #fff;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            font-weight: bolder;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .horizonav {
+            font-size: 18px;
+            display: flex;
+            margin-right: 100px;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            display: inline;
+            text-decoration: none;
+        }
+
+        #about,
+        #vision,
+        #mission {
+            text-decoration: none;
+            color: #333;
+        }
+
+        #icon1 {
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        .whatsapplink,
+        .call {
+            text-decoration: none;
+            color: #333;
+        }
+
+        #call {
+            margin-top: 12px;
+            text-align: center;
+        }
+
+        .call {
+            text-align: center;
+            color: #333;
+            font-weight: bold;
+
+        }
+
+        #whatsapp {
+            background-color: rgba(172, 255, 47, 0.789);
+            width: 170px;
+            height: 30px;
+            text-align: center;
+            line-height: 33px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .img1 {
+            display: inline-block;
+            height: auto;
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+        }
+
+        .images {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #slider,
+        .slider {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        #slider figure,
+        .slider figure {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 20s slider infinite;
+        }
+
+        #slider figure img,
+        .slider figure img {
+            float: left;
+            width: 20%;
+            height: auto;
+        }
+
+        @keyframes slider {
+            0% {
+                left: 0;
+            }
+
+            20% {
+                left: 0;
+            }
+
+            25% {
+                left: -100%;
+            }
+
+            45% {
+                left: -100%;
+            }
+
+            50% {
+                left: -200%;
+            }
+
+            70% {
+                left: -200%;
+            }
+
+            75% {
+                left: -300%;
+            }
+
+            95% {
+                left: -300%;
+            }
+
+            100% {
+                left: -400%;
+            }
+        }
+
+        #products,
+        #about1 {
+            text-align: center;
+        }
+
+        #logo2 {
+            width: 250px;
+            height: 250px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        #p1 {
+            margin-left: 7px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 0.6em;
+            background-color: rgb(50, 47, 47);
+            color: white;
+            position: relative;
+            bottom: 0;
+        }
+
+        .call1,
+        .whatsapplink1 {
+            text-decoration: none;
+            color: white;
+        }
+
+        #banner {
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            border-radius: 50%;
+            word-spacing: 25px;
+        }
+
+        #socials {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        #ban {
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+            border-radius: 50%;
+            word-spacing: 50px;
+        }
+
+        @media (max-width: 768px) {
+            #horizontalnav {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+
+            .horizonav {
+                margin: 10px 0;
+            }
+
+            .call {
+                position: static;
+                margin-top: 10px;
+            }
+
+            .img1 {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .img1 {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="socials">
+        <a id="ban" href="https://www.facebook.com/share/14rJM27sKf/">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a id="ban" href="https://www.instagram.com/iykejesus4u?igsh=YTN6ZTF3cGd5Nmtz">
+            <i class="fa-brands fa-square-instagram"></i>
+        </a>
+        <a id="ban" href="mailto:zikennaglobalresources@gmail.com">
+            <i class="fa-solid fa-square-envelope"></i>
+        </a>
+    </div>
+    <div>
+        <nav id="horizontalnav">
+            <p class="horizonav"><img id="logo" src="./ikLogo.jpg" alt="Logo"></p>
+            <p class="horizonav"><a id="about" href="#aboutus">About-Us</a></p>
+            <p class="horizonav" id="account"><a id="vision" href="#vision1">Vision</a></p>
+            <p class="horizonav" id="help"><a id="mission" href="#mission1">Mission</a></p>
+            <p class="horizonav" id="whatsapp"><a class="whatsapplink" href="https://wa.me/message/PORTSGFFT4FHD1"><i
+                        class="fa-brands fa-whatsapp" id="icon1"></i> WhatsApp-Us</a></p>
+        </nav>
+    </div>
+    <div id="call">
+        <a class="call" href="tel:+2347060433000"><i class="fa-solid fa-phone" id="icon1"></i> Call-Us +234 706 043
+            3000</a>
+    </div>
+
+    <div class="images">
+        <h2 id="products">Our Products</h2>
+        <div id="slider">
+            <figure>
+                <img src="./img1.jpg" alt="Image 1">
+                <img src="./img2.jpg" alt="Image 2">
+                <img src="./img3.jpg" alt="Image 3">
+                <img src="./img4.jpg" alt="Image 4">
+                <img src="./img1.jpg" alt="Image 1">
+            </figure>
+        </div>
+        <br><br>
+
+        <!-- Ensure all image paths are correct -->
+        <img class="img1" src="./img1.jpg" alt="Image 1">
+        <img class="img1" src="./img2.jpg" alt="Image 2">
+        <img class="img1" src="./img3.jpg" alt="Image 3">
+        <img class="img1" src="./img4.jpg" alt="Image 4">
+        <img class="img1" src="./img6.jpg" alt="Image 6">
+        <img class="img1" src="./img7.jpg" alt="Image 7">
+        <img class="img1" src="./img12.jpg" alt="Image 12">
+        <img class="img1" src="./img13.jpg" alt="Image 13">
+        <img class="img1" src="./img14.jpg" alt="Image 14">
+        <img class="img1" src="./img15.jpg" alt="Image 15">
+        <img class="img1" src="./img16.jpg" alt="Image 16">
+        <img class="img1" src="./img17.jpg" alt="Image 17">
+        <img class="img1" src="./img18.jpg" alt="Image 18">
+        <img class="img1" src="./img19.jpg" alt="Image 19">
+        <img class="img1" src="./img20.jpg" alt="Image 20">
+        <img class="img1" src="./img21.jpg" alt="Image 21">
+        <img class="img1" src="./img22.jpg" alt="Image 22">
+        <img class="img1" src="./img23.jpg" alt="Image 23">
+        <img class="img1" src="./img24.jpg" alt="Image 24">
+        <img class="img1" src="./img25.jpg" alt="Image 25">
+        <img class="img1" src="./img26.jpg" alt="Image 26">
+        <img class="img1" src="./img27.jpg" alt="Image 27">
+        <img class="img1" src="./img28.jpg" alt="Image 28">
+        <img class="img1" src="./img29.jpg" alt="Image 29">
+        <img class="img1" src="./img30.jpg" alt="Image 30">
+        <img class="img1" src="./img31.jpg" alt="Image 31">
+        <img class="img1" src="./img32.jpg" alt="Image 32">
+        <img class="img1" src="./img33.jpg" alt="Image 33">
+        <img class="img1" src="./img34.jpg" alt="Image 34">
+        <img class="img1" src="./img35.jpg" alt="Image 35">
+        <img class="img1" src="./img36.jpg" alt="Image 36"><br><br>
+
+        <div class="slider">
+            <figure>
+                <img src="./img37.jpg" alt="Image 37">
+                <img src="./img38.jpg" alt="Image 38">
+                <img src="./img39.jpg" alt="Image 39">
+                <img src="./img40.jpg" alt="Image 40">
+                <img src="./img37.jpg" alt="Image 37">
+            </figure>
+        </div>
+
+        <img class="img1" src="./img37.jpg" alt="Image 37">
+        <img class="img1" src="./img38.jpg" alt="Image 38">
+        <img class="img1" src="./img39.jpg" alt="Image 39">
+        <img class="img1" src="./img40.jpg" alt="Image 40">
+        <img class="img1" src="./img41.jpg" alt="Image 41">
+        <img class="img1" src="./img42.jpg" alt="Image 42">
+        <img class="img1" src="./img43.jpg" alt="Image 43">
+        <img class="img1" src="./img44.jpg" alt="Image 44">
+        <img class="img1" src="./img45.jpg" alt="Image 45">
+        <img class="img1" src="./img46.jpg" alt="Image 46">
+        <img class="img1" src="./img47.jpg" alt="Image 47">
+        <img class="img1" src="./img48.jpg" alt="Image 48">
+        <img class="img1" src="./img49.jpg" alt="Image 49">
+        <img class="img1" src="./img50.jpg" alt="Image 50">
+        <img class="img1" src="./img51.jpg" alt="Image 51">
+        <img class="img1" src="./img52.jpg" alt="Image 52">
+        <img class="img1" src="./img53.jpg" alt="Image 53">
+        <img class="img1" src="./img54.jpg" alt="Image 54">
+        <img class="img1" src="./img55.jpg" alt="Image 55">
+        <img class="img1" src="./img56.jpg" alt="Image 56">
+        <img class="img1" src="./img57.jpg" alt="Image 57">
+        <img class="img1" src="./img58.jpg" alt="Image 58">
+        <img class="img1" src="./img59.jpg" alt="Image 59">
+        <img class="img1" src="./img60.jpg" alt="Image 60">
+        <img class="img1" src="./img61.jpg" alt="Image 61">
+        <img class="img1" src="./img62.jpg" alt="Image 62">
+        <img class="img1" src="./img63.jpg" alt="Image 63">
+        <img class="img1" src="./img64.jpg" alt="Image 64">
+        <img class="img1" src="./img65.jpg" alt="Image 65">
+        <img class="img1" src="./img66.jpg" alt="Image 66">
+        <img class="img1" src="./img67.jpg" alt="Image 67">
+        <img class="img1" src="./img68.jpg" alt="Image 68">
+        <img class="img1" src="./img69.jpg" alt="Image 69">
+        <img class="img1" src="./img70.jpg" alt="Image 70">
+        <img class="img1" src="./img71.jpg" alt="Image 71">
+        <img class="img1" src="./img72.jpg" alt="Image 72">
+        <img class="img1" src="./img73.jpg" alt="Image 73">
+        <img class="img1" src="./img74.jpg" alt="Image 74">
+        <img class="img1" src="./img75.jpg" alt="Image 75">
+        <img class="img1" src="./img76.jpg" alt="Image 76">
+        <img class="img1" src="./img77.jpg" alt="Image 77">
+        <img class="img1" src="./img78.jpg" alt="Image 78">
+        <img class="img1" src="./img79.jpg" alt="Image 79">
+        <img class="img1" src="./img80.jpg" alt="Image 80">
+    </div><br><br><br>
+
+    <div id="aboutus">
+        <img id="logo2" src="./ikLogo.jpg" alt="Logo">
+        <p id="about1">Motto: Where self-care meets luxury</p>
+        <h2 id="about1">About-Us</h2>
+        <p id="p1"><b>Z Ikenna Global Resources</b> was founded by Mr. Ikenna Iyke, a perfumery enthusiast with a
+            passion for creating unique fragrances that evoke emotions and spark memories. With years of experience in
+            the perfume, body lotion & soaps industry, Z Ikenna Globa Resources set out to create a brand that would
+            offer something different products that are not only beautiful but also meaningful. We are located at <b>B56
+                Abia Plaza, Upstairs Trade Fair Balogun Business Area(BBA), Badagry Express Way, Lagos, Nigeria.</b></p>
+        <ul>
+            <h4>Our product range includes:</h4>
+            <li>Perfumes: Exquisite fragrances for men and women, crafted with love and care to evoke emotions and spark
+                memories.</li>
+            <li>Body Lotions: Nourishing and moisturizing body lotions that leave your skin feeling soft, smooth, and
+                pampered.</li>
+            <li>Soaps: Gentle and effective soaps that cleanse and nourish your skin, available in a range of fragrances
+                and varieties.</li>
+        </ul>
+        <ul>
+            <h4>Our Values:</h4>
+            <li>Quality: We're committed to using only the finest ingredients and essential oils to create products that
+                are not only effective but also safe and gentle on your skin.</li>
+            <li>Innovation: We're constantly seeking new ways to innovate and improve our products, from unique
+                fragrance combinations to sustainable packaging.</li>
+            <li>Customer Satisfaction: We're dedicated to providing exceptional customer service and ensuring that every
+                customer is completely satisfied with their purchase.</li>
+        </ul>
+    </div>
+
+    <div id="vision1">
+        <h2 id="about1">Vision</h2>
+        <p id="p1">To be the leading provider of exquisite fragrances and luxurious personal care products that inspire
+            confidence, beauty, and individuality.</p>
+        <ul>
+            <h4>Our Aspirations:</h4>
+            <li>To provide products that evoke emotions and spark memories</li>
+            <li>To provide exceptional customer experiences through outstanding quality, innovation, and service</li>
+            <li>To build a community of like-minded individuals who share our passion for fragrance and self-care</li>
+            <li>To continuously innovate and improve our products and services, staying ahead of industry trends and
+                customer expectations</li>
+        </ul>
+        <ul>
+            <h4>Our Guiding Principles</h4>
+            <li>Customer Focus: We put our customers at the heart of everything we do</li>
+            <li>Sustainability: We aim to minimize our environmental footprint and promote eco-friendly practices</li>
+            <li>Integrity: We operate with transparency, honesty, and ethics in all our interactions</li>
+        </ul>
+    </div>
+
+    <div id="mission1">
+        <h2 id="about1">Mission</h2>
+        <p id="p1">To craft exquisite fragrances and luxurious personal care products that nourish the senses, inspire
+            confidence, and promote well-being, while delivering exceptional customer experiences and building a
+            community of fragrance lovers.</p>
+        <p id="p1">We promise to always put our customers first, to listen to their feedback, and to continuously strive
+            for excellence in everything we do. We're committed to building a brand that's synonymous with quality,
+            innovation, and customer satisfaction.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Z Ikenna Global Resources. All rights reserved.</p>
+        <p>Address: B56 Abia Plaza, Upstairs Trade Fair Balogun Business Area(BBA), Badagry Express Way, Lagos, Nigeria.
+        </p>
+        <a id="banner" href="https://www.facebook.com/share/14rJM27sKf/">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a id="banner" href="https://www.instagram.com/iykejesus4u?igsh=YTN6ZTF3cGd5Nmtz">
+            <i class="fa-brands fa-square-instagram"></i>
+        </a>
+        <a id="banner" href="mailto:zikennaglobalresources@gmail.com">
+            <i class="fa-solid fa-square-envelope"></i>
+        </a>
+        <br><br>
+
+        <p>Designed & Developed by K.O.K</p>
+        <p><a class="call1" href="tel:+2347061707504"><i class="fa-solid fa-phone" id="icon1"></i> Call-Us +234 706 170
+                7504</a></p>
+        <p><a class="whatsapplink1" href="https://wa.me/qr/QIVWUE44CQBKL1"><i class="fa-brands fa-whatsapp"
+                    id="icon1"></i> Message-Us</a></p>
+    </footer>
+</body>
+
+</html>
